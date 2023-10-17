@@ -6,41 +6,40 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 23:13:59 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/05 14:56:23 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/10/13 12:51:12 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// big[i] serve apenas para dar segfault
 char	*ft_strnstr(const char *big, const char *little, size_t n)
 {
 	size_t	i;
 	size_t	j;
-
+	
 	i = 0;
-	j = 0;
-	if (!little)
+	if (!*little)
 		return ((char *)big);
-	while ((n > i) && big[i])
+	if (n < ft_strlen(little) && big[i])
+		return (NULL);
+	while (big[i] && (n - ft_strlen(little) >= i))
 	{
-		while ((big[i + j] == little[j]) && big [i + j])
+		j = 0;
+		while ((big[i + j] == little[j]) && big [i + j] && little[j])
 		{
 			j++;
 		}
 		if (little[j] == '\0')
 			return ((char *)&big[i]);
 		i++;
-		j = 0;
-	}
+	}	
 	return (NULL);
 }
 /*
 int	main(void)
 {
-	char	*str = "Encontra-me esta substring";
-	char	*substr = "esta";
-	
-	printf("Result:%s\n", ft_strnstr(str, substr, 15));
+	printf("Result:%s\n", ft_strnstr(((void*)0), "fake", 3));
 	return (0);
 }*/
 //primeiro comparamos os char do little

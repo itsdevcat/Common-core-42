@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 10:35:52 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/04 11:51:40 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/10/12 15:13:10 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,17 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	int				i;		
+	size_t			i;		
 	unsigned char	*s1;
 
 	i = 0;
 	s1 = (unsigned char *)s;
-	while (s1[i] && n > 0)
+	
+	if (n == 0)
+		return (NULL);
+	while (n > 0)
 	{
-		if (s1[i] == c)
+		if (s1[i] == (unsigned char)c)
 		{
 			return (s1 + i);
 		}
@@ -33,8 +36,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 /*
 int	main(void)
 {
-	char	*str = "Ola pessoas";
-	if (ft_memchr(str, 'd', 5))
+	char s[] = {0, 1, 2 ,3 ,4 ,5};
+	if (ft_memchr(s, 2, 3))
 		printf("Character found\n");
 	else
 		printf("character not found\n");

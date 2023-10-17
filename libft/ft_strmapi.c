@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 11:43:01 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/09 12:09:00 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/10/13 13:13:29 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@
 		return ('C');
 }*/
 
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	size_t	i;
 	char	*new;
-	
+
 	i = 0;
 	new = (char *)malloc(ft_strlen(s) + 1 * sizeof(char));
 	if (!new)
@@ -34,6 +34,7 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		new[i] = (*f)(i, s[i]);
 		i++;
 	}
+	new[i] = '\0';
 	return (new);
 }
 

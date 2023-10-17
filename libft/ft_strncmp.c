@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 17:36:19 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/04 10:25:59 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/10/13 14:31:26 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,17 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
-	while ((s1[i] && s2[i]) && (s1[i] == s2[i]) && n > 0)
+	while (i < n && (s1[i] || s2[i]))
 	{
-		i++;
-		n--;
+		if (s1[i] == s2[i])
+			i++;
+		else
+			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 	}
-	return (s1[i] - s2[i]);
+	return (0);
 }
 /*
 int	main(void)
@@ -34,3 +36,6 @@ int	main(void)
 	return (0);
 }
 */
+
+//unsigned char pq char negativo c char negativo da smp negativo, n da valor
+//certo da comparacao.

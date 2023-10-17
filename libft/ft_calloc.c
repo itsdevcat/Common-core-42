@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 15:03:20 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/06 14:16:58 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/10/11 14:13:00 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,15 +32,18 @@ int	main(void)
 	free(str);
 	return (0);
 }*/
-/* The  calloc()  function  allocates memory for an array of n elements 
+/* The  calloc()  function  allocates memory for an array 
+of n elements 
 (of size bytes each) and returns a pointer to the allocated memory.  
 	   
 	   The memory is set to zero.  If n or size is  0,
-       then  calloc()  returns  either  NULL, or a unique pointer value 
+       then  calloc()  returns  either  NULL, or a unique pointer 
+	   value 
 	   that can later be successfully
        passed to free().  
 	   
-	   If the multiplication of nmemb and size would result  in  integer 
+	   If the multiplication of nmemb and size would result  in  
+	   integer 
 	    overflow,
        then  calloc() returns an error.  
 	   
@@ -48,7 +51,8 @@ int	main(void)
 		   return value: return a pointer to the allocated memory, on 
 		   error, returns NULL.
 		   strlen(str) + 1 é usada para determinar o tamanho da memória 
-		   que deve ser alocada para armazenar a string str, incluindo o caractere nulo '\0' no final.
+		   que deve ser alocada para armazenar a string str, 
+		   incluindo o caractere nulo '\0' no final.
 */
 
 //A função calloc em C aloca memória para um array de elementos e 

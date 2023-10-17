@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 14:34:23 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/06 15:04:52 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/10/11 17:18:12 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 char	*ft_strdup(const char *s)
 {
 	char	*dup;
-	
-	if(!s)
+
+	if (!s)
 		return (NULL);
 	dup = (char *)malloc((ft_strlen(s) +1) * sizeof(char));
 	if (!dup)
@@ -24,7 +24,7 @@ char	*ft_strdup(const char *s)
 	ft_strlcpy(dup, (char *)s, ft_strlen(s) +1);
 	return (dup);
 }
-
+/*
 int	main(int ac, char **av)
 {
 	char	*s2 = ft_strdup(av[1]);
@@ -34,3 +34,4 @@ int	main(int ac, char **av)
 	free(s2);
 	return (0);
 }
+*/

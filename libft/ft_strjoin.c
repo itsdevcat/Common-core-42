@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 16:08:56 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/06 16:34:22 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/10/12 16:51:42 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	i;
 	size_t	j;
 
+	if (!s1 || !s2)
+		return (NULL);
 	i = 0;
 	j = 0;
-	new = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) * sizeof(char));
+	new = (char *)malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
 	if (!new)
 		return (NULL);
 	while (s1[i])
@@ -34,14 +36,13 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		i++;
 		j++;
 	}
+	new[i] = '\0';
 	return (new);
 }
 /*
 int	main(void)
 {
-	char	*str1 = "Hello, ";
-	char	*str2 = "world";
-	char	*new = ft_strjoin(str1, str2);
+	char	*new = ft_strjoin("arroz", " doce");
 
 	printf("%s\n", new);
 	free(new);
