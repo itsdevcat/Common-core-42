@@ -1,5 +1,6 @@
 {
 	"files.associations": {
-		"ft_putnbr_fd": "c"
+		"ft_putnbr_fd": "c",
+		"libft.h": "c"
 	}
 }

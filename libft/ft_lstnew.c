@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 17:52:51 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/12 19:03:31 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/10/18 14:54:20 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ t_list	*ft_lstnew(void *content)
 	new->next = NULL;
 	return (new);
 }
-
+/*
 int	main(void)
 {
 	t_list	*node1 = ft_lstnew("Element 1, so texto");
@@ -39,6 +39,6 @@ int	main(void)
 	free (node1);
 	free (node2);
 	return (0);
-}
+}*/
 
 // o primeiro if verifica se os nodes foram criados com sucesso
