@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 19:55:29 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/12 17:44:51 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/10/19 14:52:08 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	size_t 	destlen;
+	size_t	destlen;
 	size_t	i;
-	
+
 	destlen = ft_strlen(dest);
 	i = 0;
 	if (size <= destlen)

@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 16:35:22 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/13 14:58:08 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/10/19 16:22:45 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		i++;
 	while (len > i && ft_strchr(set, s1[len]))
 		len--;
-	new = ft_substr(s1, i, len - i);
+	new = ft_substr(s1, i, len - i + 1);
 	if (!new)
 		return (NULL);
 	return (new);

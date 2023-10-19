@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 10:35:52 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/12 15:13:10 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/10/19 15:02:06 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	i = 0;
 	s1 = (unsigned char *)s;
-	
 	if (n == 0)
 		return (NULL);
 	while (n > 0)

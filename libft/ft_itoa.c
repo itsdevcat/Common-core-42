@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 11:08:38 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/12 15:11:18 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/10/19 14:48:18 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static int	countdigits(int n)
 		n = n / 10;
 		total++;
 	}
-	return (total); 
+	return (total);
 }
 
 char	*ft_itoa(int n)
@@ -54,7 +54,7 @@ char	*ft_itoa(int n)
 		i--;
 	}
 	str[i] = (n % 10) + '0';
-	return (str); 
+	return (str);
 }
 /*
 int	main(void)

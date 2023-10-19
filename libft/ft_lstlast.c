@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 15:51:51 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/18 17:08:57 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/10/19 14:44:17 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ t_list	*ft_lstlast(t_list *lst)
 {
 	t_list	*last;
 
-	if(!lst)
+	if (!lst)
 		return (NULL);
 	last = lst;
 	while (last->next)

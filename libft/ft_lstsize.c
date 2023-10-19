@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 15:21:13 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/18 15:48:07 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/10/19 14:43:57 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_lstsize(t_list *lst)
 	int		size;
 
 	if (!lst)
-		return 0;
+		return (0);
 	tmp = lst;
 	size = 0;
 	while (tmp)

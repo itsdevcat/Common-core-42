@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 19:29:38 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/04 10:26:16 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/10/19 14:51:36 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_toupper(int c)
 	if (c >= 'a' && c <= 'z')
 		return (c -= 32);
 	else
-		return (c); 
+		return (c);
 }
 /*
 int	main(void)

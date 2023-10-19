@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 23:13:59 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/13 12:51:12 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/10/19 14:58:10 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t n)
 {
 	size_t	i;
 	size_t	j;
-	
+
 	i = 0;
 	if (!*little)
 		return ((char *)big);
@@ -33,7 +33,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t n)
 		if (little[j] == '\0')
 			return ((char *)&big[i]);
 		i++;
-	}	
+	}
 	return (NULL);
 }
 /*

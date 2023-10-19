@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 17:43:48 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/18 18:08:34 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/10/19 16:13:51 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*tmp;
 	t_list	*tmp2;
-	
-	if (!lst)
+
+	if (!lst || !*lst)
 		return ;
 	tmp = *lst;
 	tmp2 = tmp->next;
@@ -30,10 +30,10 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	{
 		ft_lstdelone(tmp, (*del));
 		tmp = tmp2;
-		tmp2 = tmp->next;
+		tmp2 = tmp2->next;
 	}
 	ft_lstdelone(tmp, (*del));
-	lst = NULL;
+	*lst = NULL;
 }
 /*
 int	main(void)
@@ -41,7 +41,8 @@ int	main(void)
 	t_list *list = ft_lstnew(ft_strdup("Hello,"));
 	ft_lstadd_back(&list, ft_lstnew(ft_strdup("World!")));
 
-	printf("Conteúdo antes da deleção:\n1 - %s\n2 - %s\n", (char *)(list->content), (char *)(list->next->content));
+	printf("Conteúdo antes da deleção:\n1 - %s\n2 - %s\n", 
+		(char *)(list->content), (char *)(list->next->content));
 	ft_lstclear(&list, delete_content);
 	printf("Conteúdo após a deleção:\n1 - %s\n", (char *)(list->content));
 	return (0);

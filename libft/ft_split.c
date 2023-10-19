@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 14:18:32 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/13 14:10:36 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/10/19 17:01:12 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,18 +69,21 @@ char	**ft_split(char const *s, char c)
 	{
 		while (s[i] && s[i] == c)
 			i++;
-		new[j] = ft_substr(s, i, word_size(s, i, c));
+		new[j++] = ft_substr(s, i, word_size(s, i, c));
 		i += word_size(s, i, c);
-		j++;
 	}
+	new[words] = NULL;
 	return (new);
 }
 /*
 int main()
 {
-	char **strings = ft_split("abcdaaaaaaefgahija", 'a');
+	char **strings = ft_split("      split       this for   me  !       ", ' ');
 
-	printf("%s\n", strings[0]);
-	printf("%s\n", strings[1]);
-	printf("%s\n", strings[2]);
+	while (*strings)
+    {
+        printf("%s\n", *strings);
+        strings++;
+    }
+	return (0);
 }*/
