@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 14:18:17 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/19 17:07:24 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/11/21 11:41:38 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,18 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s + i);
 	return (NULL);
 }
-/*
-int	main(void)
+
+/* int	main(void)
 {
-	char 	test[] = "tripouille";
-	char	*s = ft_strchr(test, 't' + 256);
-	char	*s2 = strchr(test, 't' + 256);
-	
-	printf("%s\n%s\n", s, s2);
+	char	*str = "Hello, pessoal.";
+	char	find = ',';
+	char	*result;
+
+	result = ft_strchr(str, find);
+
+	if (result)
+		printf("Character was found.");
+	else
+		printf("Character not found.\n");
 	return (0);
-}*/
+} */

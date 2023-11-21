@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 18:11:11 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/19 14:55:49 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/11/21 11:57:57 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,3 @@ int	main(void)
 	ft_lstiter(list, print_content);
 	return (0);
 }*/
-//e importante criar um pointer tmp pra nao perdermos/alterarmos 
-//o inicio da lista.
-// while (tmp->next) significa enquanto tmp tenha algum node a frente.
-//voltamos a chamar a funcao caso a lista so tenha um elemento, ou pra 
-// aplicarmos a funcao ao ultimo, se tiver mais do q um.

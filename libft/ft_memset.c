@@ -6,28 +6,28 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 16:06:42 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/09/12 19:54:52 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/11/09 14:30:55 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *ptr, int value, size_t len)
+void	*ft_memset(void *ptr, int value, size_t n)
 {
-	char	*pstring;
+	char	*str;
 	size_t	i;
 
-	pstring = (char *)ptr;
+	str = (char *)ptr;
 	i = 0;
-	while (i < len)
+	while (i < n)
 	{
-		pstring[i] = value;
+		str[i] = value;
 		i++;
 	}
 	return (ptr);
 }
-
-/*int	main(void)
+/* 
+int	main(void)
 {
 	char alphabet[] = "123456789";
 
@@ -35,12 +35,5 @@ void	*ft_memset(void *ptr, int value, size_t len)
 	ft_memset(alphabet, '*', 5);
 	printf("After memset: %s\n", alphabet);
 	return (0);
-}*/
-
-//pointer e void, por isso temos de fazer cast para type char. 
-//Para isso temos de criar um ptr de char.
-//este tp de pointer serve p podermos escolher apontar p um array de inteiros. 
-//char, double etc.
-//temos de inicializar int i para percorrer a string.
-//size_t serve p trabalharmos c tamanho de arrays, p evitar q sejam nrs neg.
-//retornamos pointer.
+}
+ */

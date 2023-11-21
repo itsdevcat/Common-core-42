@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 22:29:31 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/04 11:52:48 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/11/21 11:32:31 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,15 +29,14 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*
+/* 
 int	main(void)
 {
-	char	*str1 = "Copia esta";
-	char	dest[10];
-	ft_memmove(dest, str1, 10);
-	printf("%s\n", dest);
-	memmove(dest, str1, 10);
-	printf("%s\n", dest);
+	char	s1[10] = "Copia esta";
+	char	s2[15];
+	ft_memmove(s2, s1, 10);
+	printf("%s\n", s2);
+	memmove(s2, s1, 10);
+	printf("%s\n", s2);
 	return (0);
-}*/
-//n-- decrementa e dps verifica se e maior q 0.
+} */

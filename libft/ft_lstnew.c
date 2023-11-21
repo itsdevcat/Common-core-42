@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 17:52:51 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/18 14:54:20 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/11/09 14:49:22 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,5 +40,3 @@ int	main(void)
 	free (node2);
 	return (0);
 }*/
-
-// o primeiro if verifica se os nodes foram criados com sucesso

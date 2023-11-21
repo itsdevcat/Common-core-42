@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 11:59:34 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/13 13:06:58 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/11/09 12:38:56 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,10 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 /*
 int main(void)
 {
-	char *s;
+	char	*s1 = "oooo";
+	char	s2[40] = "Paralelipipedo";
 	
-    printf("Lenght of src string: %ld\n", ft_strlcpy(s, "lorem ipsum", 3));
-    printf("Result of the copied string: %s\n", s);
+    printf("Lenght of src string: %ld\n", ft_strlcpy(s2, s1, 4));
+    printf("Result of the copied string: %s\n", s2);
     return (0);
 }*/

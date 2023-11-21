@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 14:10:50 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/11 17:17:14 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/11/21 11:44:54 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,10 @@ int	main(void)
 {
 	int	fd;
 	
-	fd = open("caralho.txt", O_WRONLY | O_CREAT, 0666);
+	fd = open("arquivo.txt", O_WRONLY | O_CREAT, 0666);
 	if (fd == -1)
 	{
-		perror("Erro ao abrir o arquivo\n");
+		printf("Erro ao abrir o arquivo\n");
 		return (1);
 	}
 	ft_putnbr_fd(310899, fd);

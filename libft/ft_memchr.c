@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 10:35:52 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/19 15:02:06 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/11/09 14:48:42 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*
+/* 
 int	main(void)
 {
 	char s[] = {0, 1, 2 ,3 ,4 ,5};
@@ -41,4 +41,4 @@ int	main(void)
 	else
 		printf("character not found\n");
 	return (0);
-}*/
+} */

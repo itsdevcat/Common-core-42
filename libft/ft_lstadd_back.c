@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 16:20:09 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/19 14:48:43 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/11/21 11:56:58 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 int	main(void)
 {
 	t_list *lista = NULL;
-	t_list *ret;
+	t_list *return;
 	
 	ft_lstadd_back(&lista, ft_lstnew("A"));
 	ft_lstadd_back(&lista, ft_lstnew("B"));
@@ -41,4 +41,4 @@ int	main(void)
 	return (0);
 }*/
 
-//ret e um ponteiro pra vermos o ultimo elemento(node)/conteudo da lista.
+//ret e um ponteiro p vermos o ultimo node da lista.

@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 13:58:18 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/09 14:41:59 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/11/21 11:46:12 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	main(void)
 	fd = open("meuarquivo.txt", O_WRONLY | O_CREAT, 0666);
 	if (fd == -1)
 	{
-		perror("Erro ao abrir o arquivo\n");
+		printf("Erro ao abrir o arquivo\n");
 		return (1);
 	}
 	ft_putendl_fd("Hello, peeps", fd);

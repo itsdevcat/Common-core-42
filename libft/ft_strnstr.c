@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 23:13:59 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/19 14:58:10 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/11/09 11:38:13 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t n)
 /*
 int	main(void)
 {
-	printf("Result:%s\n", ft_strnstr(((void*)0), "fake", 3));
+	char	*s1 = "Eu gosto de arroz, feijao e batata.";
+	char	*s2 = ",";
+	printf("%s\n", ft_strnstr(s1, s2, 30));
 	return (0);
 }*/
-//primeiro comparamos os char do little
-//se forem iguais, continuamos a comparar com os do big ate nao serem.

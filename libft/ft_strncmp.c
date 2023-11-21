@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 17:36:19 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/13 14:31:26 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/11/21 11:33:55 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,3 @@ int	main(void)
 	return (0);
 }
 */
-
-//unsigned char pq char negativo c char negativo da smp negativo, n da valor
-//certo da comparacao.

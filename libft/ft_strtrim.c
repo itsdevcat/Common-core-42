@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 16:35:22 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/19 16:22:45 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/11/09 11:54:26 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	main(void)
 {
 	char	*trimmed;
 	
-	trimmed = ft_strtrim("lorem \n ipsum \t dolor \n sit \t amet", " ");
+	trimmed = ft_strtrim("  lorem ipsum dolor sit amet   ", " ");
 	printf("%s\n", trimmed);
 	return (0);
 }*/

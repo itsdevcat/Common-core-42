@@ -6,11 +6,24 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 14:18:32 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/19 17:01:12 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/11/21 11:43:53 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static void	ft_free(char	**s)
+{
+	size_t	i;
+
+	i = 0;
+	while (s[i])
+	{
+		free(s[i]);
+		i++;
+	}
+	free (s);
+}
 
 static int	countwords(const char *s, char c)
 {
@@ -50,40 +63,41 @@ static int	word_size(const char *s, int i, char c)
 char	**ft_split(char const *s, char c)
 {
 	char	**new;
-	int		words;
 	int		i;
 	int		j;
 
 	i = 0;
 	j = 0;
-	words = countwords(s, c);
-	new = (char **)malloc((words + 1) * sizeof(char *));
+	new = (char **)malloc((countwords(s, c) + 1) * sizeof(char *));
 	if (!new)
 		return (NULL);
-	if (words == 0)
-	{
-		new[0] = NULL;
-		return (new);
-	}
-	while (s[i] && j < words)
+	while (s[i] && j < countwords(s, c))
 	{
 		while (s[i] && s[i] == c)
 			i++;
-		new[j++] = ft_substr(s, i, word_size(s, i, c));
-		i += word_size(s, i, c);
+		new[j] = ft_substr(s, i, word_size(s, i, c));
+		if (new[j] == NULL)
+		{
+			ft_free(new);
+			return (NULL);
+		}
+		i = i + word_size(s, i, c);
+		j++;
 	}
-	new[words] = NULL;
+	new[countwords(s, c)] = NULL;
 	return (new);
 }
-/*
-int main()
+ 
+/* int main(void)
 {
-	char **strings = ft_split("      split       this for   me  !       ", ' ');
+	char **strings = ft_split("0catarina0ola0adeus0anatiefixe0", '0');
+	int i = 0;
 
-	while (*strings)
+	while (strings[i])
     {
-        printf("%s\n", *strings);
-        strings++;
+        printf("%s\n", strings[i]);
+        i++;
     }
 	return (0);
-}*/
+}  */
+

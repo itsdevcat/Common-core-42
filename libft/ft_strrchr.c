@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 15:30:50 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/13 14:47:45 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/11/09 11:38:47 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,17 +36,3 @@ int	main(void)
 	printf("%s\n", s);
 	return (0);
 }*/
-
-/*The strrchr() function returns a pointer to the last occurrence of the 
-character
-       c in the string s.
-
-RETURN VALUE
-       The  s strrchr() functions return a pointer to the matched character
-       or NULL if the character is not found.  The terminating null byte is  
-	   considered
-       part  of the string, so that if c is specified as '\0', these functions 
-	   return a
-       pointer to the terminator.
-
-*/

@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 17:43:48 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/19 16:13:51 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/11/21 11:57:26 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,9 @@ int	main(void)
 	t_list *list = ft_lstnew(ft_strdup("Hello,"));
 	ft_lstadd_back(&list, ft_lstnew(ft_strdup("World!")));
 
-	printf("Conteúdo antes da deleção:\n1 - %s\n2 - %s\n", 
+	printf("Conteúdo antes:\n1 - %s\n2 - %s\n", 
 		(char *)(list->content), (char *)(list->next->content));
 	ft_lstclear(&list, delete_content);
-	printf("Conteúdo após a deleção:\n1 - %s\n", (char *)(list->content));
+	printf("Conteúdo depois:\n1 - %s\n", (char *)(list->content));
 	return (0);
 }*/

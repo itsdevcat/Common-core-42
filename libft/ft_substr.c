@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 15:12:12 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/19 16:59:39 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/11/09 11:45:44 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 /*
 int	main(void)
 {
-	char	*s2 = ft_substr("0123456789", 9, 10);
+	char	*s1 = "Eu gosto de feijao, batata e arroz.";
+	char	*result = ft_substr(s1, 9, 4);
 	
-	printf("%s\n", s2);
-	free(s2);
+	printf("%s\n", result);
+	free(result);
 	return (0);
 }*/

@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 15:51:51 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/10/19 14:44:17 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/11/21 11:58:07 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,3 @@ int main(void)
 	printf("%s\n", (char *)ret->content);
 	return (0);
 }*/
-
-//while (last->next)
-//last = last->next; enquanto tiver um node a seguir.
-// last = last->next;, significa: quero que last, vire o proximo.
