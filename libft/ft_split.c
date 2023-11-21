@@ -6,7 +6,7 @@
 /*   By: cfranco- <cfranco-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 14:18:32 by cfranco-          #+#    #+#             */
-/*   Updated: 2023/11/21 11:43:53 by cfranco-         ###   ########.fr       */
+/*   Updated: 2023/11/21 12:10:00 by cfranco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,7 @@ char	**ft_split(char const *s, char c)
 	new[countwords(s, c)] = NULL;
 	return (new);
 }
- 
+
 /* int main(void)
 {
 	char **strings = ft_split("0catarina0ola0adeus0anatiefixe0", '0');
@@ -100,4 +100,3 @@ char	**ft_split(char const *s, char c)
     }
 	return (0);
 }  */
-
